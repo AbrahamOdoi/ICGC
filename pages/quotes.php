@@ -30,7 +30,7 @@
 					QUOTES
 				</div>
 				<div class="wrapper1">
-					<a href="../mainpage.php" data-transition='flip'rel="external" class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="../icons/quote.png" />
+					<a href="../mainpage.php" data-transition='flip'rel="external" class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="../icons/home.png" />
 					<br/>
 					HOME</a>
 					<a href="daily.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/devotion.png" />
@@ -45,10 +45,10 @@
 					<a href="books.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/books.png" />
 					<br/>
 					Books</a>
-					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/more.png" />
+					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/videos.png" />
 					<br/>
 					Videos</a>
-					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/more.png" />
+					<a href="loc.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/loc.png" />
 					<br/>
 					Near You</a>
 					<a href="more.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/more.png" />

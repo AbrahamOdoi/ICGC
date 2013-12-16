@@ -43,15 +43,15 @@
 					<a href="books.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/books.png" />
 					<br/>
 					Books</a>
-					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
+					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/videos.png" />
+					<br/>
+					Videos</a>
+					<a href="loc.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/loc.png" />
 					<br/>
 					Near You</a>
-					<a href="more.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
+					<a href="more.php" data-transition='slide' class="span_menu" style="color: black;"><img src="../icons/more.png" />
 					<br/>
 					More...</a>
-					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
-					<br/>
-					Declarations</a>
 				</div>
 
 			</div>
