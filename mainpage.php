@@ -29,35 +29,44 @@
 				<div class="div_header">
 					ICGC Daily Devotional
 				</div>
+
 				<div class="wrapper1">
-					<a href="quotes.php" data-transition='slide'><span class="span_menu"> <!-- <hr/> --> <img src="icons/quote.png" />
-						<br/>
-						Quotes</span></a>
-					<a href="sermon.php" data-transition='slide'><span class="span_menu"> <!-- <hr/> --> <img src="icons/sermon.png" />
-						<br/>
-						Sermon</span></a>
-					<a href="daily.php" data-transition='slide'><span class="span_menu"> <!-- <hr/> --> <img src="icons/devotion.png" />
-						<br/>
-						Daily</span></a>
-					<a href="books.php" data-transition='slide'><span class="span_menu"> <!-- <hr/> --> <img src="icons/books.png" />
-						<br/>
-						Books</span></a>
-					<a href="more.php" data-transition='slide'><span class="span_menu" style="border-right: none;"> <!-- <hr/> --> <img src="icons/more.png" />
-						<br/>
-						More...</span></a>
+					<a href="pages/quotes.php" data-transition='flip' class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="icons/quote.png" />
+					<br/>
+					Quotes</a>
+					<a href="sermon.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/sermon.png" />
+					<br/>
+					Sermon</a>
+					<a href="daily.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/devotion.png" />
+					<br/>
+					Daily</a>
+					<a href="books.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/books.png" />
+					<br/>
+					Books</a>
+					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
+					<br/>
+					Videos</a>
+					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
+					<br/>
+					Near You</a>
+					<a href="more.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
+					<br/>
+					More...</a>
 				</div>
-				<!-- IMAGE SLIDER -->
-				<div class="slider-wrapper theme-default">
-					<div id="slider" class="nivoSlider">
-						<img src="img/slide/otabil3.jpg" data-thumb="images/1.JPG" alt="" title=""/>
-						<img src="img/slide/otabil4.jpg" data-thumb="images/1.JPG" alt="" title=""/>
-						<img src="img/slide/otabil2.jpg" data-thumb="images/1.JPG" alt="" title=""/>
-					</div>
-				</div>
-				<!-- END OF IMAGE SLIDER -->
+
 			</div>
 
 			<div id='content' data-role='content'>
+
+				<!-- IMAGE SLIDER -->
+				<div class="slider-wrapper theme-default">
+					<div id="slider" class="nivoSlider">
+						<img src="img/slide/otabil2.jpg" data-thumb="img/slide/otabil2.jpg" alt="" title=""/>
+						<img src="img/slide/otabil1.jpg" data-thumb="img/slide/otabil1.jpg" alt="" title=""/>
+						<img src="img/slide/otabil4.jpg" data-thumb="img/slide/otabil4.jpg" alt="" title=""/>
+					</div>
+				</div>
+				<!-- END OF IMAGE SLIDER -->
 
 			</div>
 
