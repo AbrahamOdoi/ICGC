@@ -31,27 +31,27 @@
 				</div>
 
 				<div class="wrapper1">
-					<a href="pages/quotes.php" data-transition='flip' class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="icons/quote.png" />
+					<a href="pages/quotes.php" class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="icons/quote.png" />
 					<br/>
 					Quotes</a>
-					<a href="sermon.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/sermon.png" />
-					<br/>
-					Sermon</a>
 					<a href="daily.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/devotion.png" />
 					<br/>
 					Daily</a>
+					<a href="sermon.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/sermon.png" />
+					<br/>
+					Streaming</a>
 					<a href="books.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/books.png" />
 					<br/>
 					Books</a>
-					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
-					<br/>
-					Videos</a>
 					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
 					<br/>
 					Near You</a>
 					<a href="more.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
 					<br/>
 					More...</a>
+					<a href="videos.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/more.png" />
+					<br/>
+					Declarations</a>
 				</div>
 
 			</div>
@@ -60,10 +60,13 @@
 
 				<!-- IMAGE SLIDER -->
 				<div class="slider-wrapper theme-default">
+
 					<div id="slider" class="nivoSlider">
-						<img src="img/slide/otabil2.jpg" data-thumb="img/slide/otabil2.jpg" alt="" title=""/>
-						<img src="img/slide/otabil1.jpg" data-thumb="img/slide/otabil1.jpg" alt="" title=""/>
-						<img src="img/slide/otabil4.jpg" data-thumb="img/slide/otabil4.jpg" alt="" title=""/>
+						<img src="img/slide/1.jpg" data-thumb="img/slide/otabil1.jpg"  alt="ICGC Slide" title=""/>
+						<img src="img/slide/2.jpg" data-thumb="img/slide/otabil2.jpg" alt="ICGC Slide" title=""/>
+						<img src="img/slide/3.jpg" data-thumb="img/slide/otabil1.jpg"  alt="ICGC Slide" title=""/>
+						<img src="img/slide/4.jpg" data-thumb="img/slide/otabil4.jpg"  alt="ICGC Slide" title=""/>
+						<img src="img/slide/5.jpg" data-thumb="img/slide/otabil4.jpg"  alt="ICGC Slide" title=""/>
 					</div>
 				</div>
 				<!-- END OF IMAGE SLIDER -->
@@ -71,7 +74,19 @@
 			</div>
 
 			<div id='footer' data-role='footer'>
+				<!-- <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/slide/otabil2.jpg" alt="Paris, France" style="width:10%"></a>
+				<a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/slide/otabil1.jpg" alt="Sydney, Australia" style="width:10%"></a>
+				<a href="#popupNYC" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/slide/otabil4.jpg" alt="New York, USA" style="width:10%"></a>
 
+				<div data-role="popup" id="popupParis" data-overlay-theme="a" data-theme="d" data-corners="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="img/slide/otabil2.jpg" style="max-height:912px;">
+				</div>
+				<div data-role="popup" id="popupSydney" data-overlay-theme="a" data-theme="d" data-corners="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="img/slide/otabil1.jpg" style="max-height:912px;">
+				</div>
+				<div data-role="popup" id="popupNYC" data-overlay-theme="a" data-theme="d" data-corners="false">
+				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="img/slide/otabil4.jpg" style="max-height:912px;">
+				</div> -->
 			</div>
 		</div>
 
@@ -79,8 +94,7 @@
 </html>
 <script type="text/javascript" >
 	$(document).ready(function() {
-
 		$('#slider').nivoSlider();
-
 	}); 
 </script>
+
