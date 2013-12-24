@@ -64,11 +64,11 @@
 					Daily Devotion<img src="img/2_1.jpg" class="img_quote" style="float: left;"/>
 				</p>
 				<?php
-				$dbcon = mysql_connect("nalosolutions.com", "heart","F0undAti0n#1");
+				$dbcon = mysql_connect("216.224.161.207:3306", "heart","F0undAti0n#1");
 				if ($dbcon) {
 					echo "yes";
 				} else {
-					echo "You are currently offline";
+					echo "You are currently offline".mysql_error();
 				}
 				$phoneNum='0249430715';
 				$pin='1111';
