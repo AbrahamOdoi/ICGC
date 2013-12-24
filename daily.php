@@ -24,14 +24,14 @@
 
 	</head>
 	<body>
-		<div id='quotes' data-role='page' >
+		<div id="daily" data-role='page' >
 
 			<div id='header' data-role='header' >
 				<div class="div_header">
 					QUOTES
 				</div>
 				<div class="wrapper1">
-					<a href="mainpage.php" data-transition='flip'rel="external" class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="icons/home.png" />
+					<a href="mainpage.php" data-transition='flip'  class="span_menu" style="color: black; border-left: 1px solid gray;"><img src="icons/home.png" />
 					<br/>
 					HOME</a>
 					<a href="daily.php" data-transition='slide' class="span_menu" style="color: black;"><img src="icons/devotion.png" />
@@ -60,30 +60,25 @@
 			</div>
 
 			<div id='content' data-role='content'>
-				<p style='vertical-align:center;color: gray;'>Dr. Otabil's quotes<img src="img/2_1.jpg" class="img_quote" style="float: left;"/></p>
-				<p class="p_quotes">
-					Delays are not denials. Waiting is not wasting. Though a vision tarries, wait for it. 
-					It shall come to pass.
+				<p style='vertical-align:center;color: gray;'>
+					Daily Devotion<img src="img/2_1.jpg" class="img_quote" style="float: left;"/>
 				</p>
-				<p class="p_quotes">
-					Every question has an answer. Every problem has a solution. Every journey has a path. 
-					Keep asking...it shall be given to you. Keep seeking...you will find. Keep knocking...it will open.
-				</p>
-				<p class="p_quotes">
-					There's no scarcity in God's economy
-				</p>
-				<p class="p_quotes">
-					USE WHAT YOU HAVE. Don't sit and hope for what others have. David had five stones; it brought down Goliath. 
-					A little boy had five loaves; it fed five thousand. Don't cry over the little in your hands. Work with it. 
-					Put it in God's hands. He can grow your tiny seeds into a mighty forest.
-				</p>
-				<p class="p_quotes">
-					Our spiritual and mental capacity determines how much we can receive from God. It's time to STRETCH spiritually and 
-					mentally. No laziness. No excuses. No complacency. STRETCH. Push. Perspire. Persevere.
-				</p>
-				<p class="p_quotes">
-					TIME IS PRECIOUS. What has to be done today must not be done tomorrow. REDEEM THE TIME.
-				</p>
+				<?php
+				$dbcon = mysql_connect("nalosolutions.com", "heart","F0undAti0n#1");
+				if ($dbcon) {
+					echo "yes";
+				} else {
+					echo "You are currently offline";
+				}
+				$phoneNum='0249430715';
+				$pin='1111';
+				mysql_select_db("db_heart_foundation");
+				$query = "select * from account where phoneNumber='" . $phoneNum . "' and pin='" . $pin . "'";
+				$result = mysql_query($query, $dbcon);
+			echo	$num = mysql_num_rows($result);
+				
+
+				?>
 			</div>
 
 			<div id='footer' data-role='footer'>
