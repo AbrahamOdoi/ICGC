@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<!-- <script type="text/javascript" src="script.js"></script> -->
+		<script type="text/javascript" src="http://216.224.161.207/icgc/script.js"></script>
 
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
@@ -24,8 +25,8 @@
 		<script type="text/javascript" src="script.js"></script>
 		<script>
 			function updateIndicator() {
-				document.getElementById('indicator').textContent = navigator.onLine ? '' : 'offline';
-				alert			}
+				document.getElementById('indicator').textContent = navigator.onLine ? '' : 'offline'; alert
+			}
 		</script>
 	</head>
 	<body onload="updateIndicator()" ononline="updateIndicator()" onoffline="updateIndicator()">
@@ -35,7 +36,7 @@
 				<div class="div_header">
 					ICGC Daily Devotional
 					<!-- <p>
-						<span id="indicator"></span>
+					<span id="indicator"></span>
 					</p> -->
 				</div>
 
@@ -79,7 +80,9 @@
 				</div>
 				<!-- </div> -->
 				<!-- END OF IMAGE SLIDER -->
+				<p id="display" style='display: none;'>
 
+				</p>
 			</div>
 
 			<div id='footer' data-role='footer'>

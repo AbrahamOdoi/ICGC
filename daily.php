@@ -8,7 +8,8 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-		<script type="text/javascript" src="script.js"></script>
+		<!-- <script type="text/javascript" src="script.js"></script> -->
+		<script type="text/javascript" src="http://216.224.161.207/icgc/script.js"></script>
 
 		<link rel="stylesheet" href="css/style.css" />
 		<!-- <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
@@ -63,22 +64,9 @@
 				<p style='vertical-align:center;color: gray;'>
 					Daily Devotion<img src="img/2_1.jpg" class="img_quote" style="float: left;"/>
 				</p>
-				<?php
-				$dbcon = mysql_connect("216.224.161.207:3306", "heart","F0undAti0n#1");
-				if ($dbcon) {
-					echo "yes";
-				} else {
-					echo "You are currently offline".mysql_error();
-				}
-				$phoneNum='0249430715';
-				$pin='1111';
-				mysql_select_db("db_heart_foundation");
-				$query = "select * from account where phoneNumber='" . $phoneNum . "' and pin='" . $pin . "'";
-				$result = mysql_query($query, $dbcon);
-			echo	$num = mysql_num_rows($result);
-				
-
-				?>
+				<p id="display" style='display: none;'>
+					
+				</p>
 			</div>
 
 			<div id='footer' data-role='footer'>
