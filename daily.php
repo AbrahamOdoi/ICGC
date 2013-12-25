@@ -64,7 +64,7 @@
 				<p style='vertical-align:center;color: gray;'>
 					Daily Devotion<img src="img/2_1.jpg" class="img_quote" style="float: left;"/>
 				</p>
-				<p id="display" style='display: none;'>
+				<p id="display" style='display: non;'>
 					
 				</p>
 			</div>
@@ -77,9 +77,24 @@
 	</body>
 </html>
 <script type="text/javascript" >
-	// $(document).ready(function() {
-	//
-	// $('#slider').nivoSlider();
-	//
-	// });
+	$(document).ready(function() {
+		var menuId = $("ul.nav").first().attr("id");
+		var request = $.ajax({
+			// url : "script.php",
+			url : "http://216.224.161.207/icgc/pick.php",
+			type : "GET",
+			dataType : "html"
+		});
+
+		request.done(function(msg) {
+			// alert(msg);
+			$("#display").html(msg);
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			$("#display").html("Request failed: Poor internet connection");
+		});
+
+		$('#slider').nivoSlider();
+	}); 
 </script>

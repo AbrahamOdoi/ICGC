@@ -25,7 +25,8 @@
 		<script type="text/javascript" src="script.js"></script>
 		<script>
 			function updateIndicator() {
-				document.getElementById('indicator').textContent = navigator.onLine ? '' : 'offline'; alert
+				document.getElementById('indicator').textContent = navigator.onLine ? '' : 'offline';
+				alert
 			}
 		</script>
 	</head>
@@ -80,7 +81,7 @@
 				</div>
 				<!-- </div> -->
 				<!-- END OF IMAGE SLIDER -->
-				<p id="display" style='display: none;'>
+				<p id="display" style='display: non;'>
 
 				</p>
 			</div>
@@ -108,8 +109,24 @@
 	$(document).ready(function() {
 		function updateIndicator() {
 			document.getElementById('indicator').textContent = navigator.onLine ? 'online' : 'offline';
-		}
+		};
 
+		var menuId = $("ul.nav").first().attr("id");
+		var request = $.ajax({
+			// url : "script.php",
+			url : "http://216.224.161.207/icgc/pick.php",
+			type : "GET",
+			dataType : "html"
+		});
+
+		request.done(function(msg) {
+			// alert(msg);
+			$("#display").html(msg);
+		});
+
+		request.fail(function(jqXHR, textStatus) {
+			$("#display").html("Request failed: Poor internet connection");
+		});
 
 		$('#slider').nivoSlider();
 	}); 
